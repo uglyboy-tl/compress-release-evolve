@@ -303,28 +303,30 @@ The theory is currently qualitative. Its next steps involve operationalizing com
 ## References
 
 1. Arrow, K. J. (1951). *Social Choice and Individual Values*. Wiley.
-2. Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.
-3. Arthur, W. B. (2013). *Complexity Economics: A Different Framework for Economic Thought*. SFI Working Paper.
-4. Beer, S. (1972). *Brain of the Firm*. Allen Lane.
-5. Beinhocker, E. D. (2006). *The Origin of Wealth*. Harvard Business School Press.
-6. Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. *Wiener Berichte*, 76, 373–435.
-7. Deming, W. E. (1986). *Out of the Crisis*. MIT Center for Advanced Engineering Study.
-8. Goodhart, C. (1975). Problems of monetary management: The U.K. experience. *Papers in Monetary Economics*, 1, 1–20.
+2. Arthur, W. B. (2013). *Complexity Economics: A Different Framework for Economic Thought*. SFI Working Paper.
+3. Arthur, W. B. (2021). Foundations of complexity economics. *Nature Reviews Physics*, 3, 136–145.
+4. Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.
+5. Beer, S. (1972). *Brain of the Firm*. Allen Lane.
+6. Beer, S. (1979). *The Heart of Enterprise*. Wiley.
+7. Beinhocker, E. D. (2006). *The Origin of Wealth*. Harvard Business School Press.
+8. Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. *Wiener Berichte*, 76, 373–435.
 9. Choi, T. Y., Netland, T. H., Sanders, N., Sodhi, M. S., & Wagner, S. M. (2023). Just-in-time for supply chains in turbulent times. *Production and Operations Management*, 32(7), 2331–2340.
-10. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
-11. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
-12. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
-13. McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
-14. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press.
-15. Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
-16. Ostrom, E. (2005). *Understanding Institutional Diversity*. Princeton University Press.
-17. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
-18. Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. *Nature*, 413(6856), 591–596.
-19. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
-20. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
-21. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423, 623–656.
-22. Siegenfeld, A. F., & Bar-Yam, Y. (2025). A formal definition of scale-dependent complexity and the multi-scale law of requisite variety. *Entropy*, 27(8), 835.
-23. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
+10. Deming, W. E. (1986). *Out of the Crisis*. MIT Center for Advanced Engineering Study.
+11. Goodhart, C. (1975). Problems of monetary management: The U.K. experience. *Papers in Monetary Economics*, 1, 1–20.
+12. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
+13. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
+14. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
+15. McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
+16. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press.
+17. Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
+18. Ostrom, E. (2005). *Understanding Institutional Diversity*. Princeton University Press.
+19. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
+20. Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. *Nature*, 413(6856), 591–596.
+21. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
+22. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
+23. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423, 623–656.
+24. Siegenfeld, A. F., & Bar-Yam, Y. (2025). A formal definition of scale-dependent complexity and the multi-scale law of requisite variety. *Entropy*, 27(8), 835.
+25. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
 
 ---
 
