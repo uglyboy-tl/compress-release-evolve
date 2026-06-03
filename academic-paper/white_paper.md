@@ -9,7 +9,7 @@
 
 ## Abstract
 
-Systems across physics, biology, and society maintain local order by redistributing entropy to other dimensions. Their survival hinges on balancing control with strategic flexibility. Here we propose a unified framework grounded in a single axiom — **entropy = randomness** — and derive the mechanisms of control, antifragility, and evolution from this foundation. We define control as **compression mapping** (f: X → Y, where |Y| < |X|), an operation that transfers entropy across dimensions without reducing its total. From this we deduce that evolution follows a positive-feedback cycle of **entropy decrease (new codes) → entropy increase (new combinations) → new entropy decrease**, driven by life's foundational property of actively feeding on entropy rather than resisting it. We apply this framework to diagnose three structural fallacies — **coding reversal, dimension compression bias, and self-referential closure** — shared across economics, natural science, political science, law, medicine, education, artificial intelligence, and management. The framework provides a unified diagnostic language for identifying when control is applied to the wrong dimensions, and a direction for building systems that retain evolutionary capacity under unanticipated shocks. Formalization and empirical validation remain as next steps.
+Systems across physics, biology, and society maintain local order by redistributing entropy to other dimensions. Here we propose a framework grounded in a single axiom — **entropy = randomness** — and derive the mechanisms of control, antifragility, and evolution from this foundation. We define control as **compression mapping** (f: X → Y, where |Y| < |X|), an operation that transfers entropy across dimensions without reducing its total. From this we deduce an evolutionary cycle of **entropy decrease (new codes) → entropy increase (new combinations) → new entropy decrease**, driven by life's property of actively feeding on entropy. We apply this framework to diagnose three structural fallacies — **coding reversal, dimension compression bias, and self-referential closure** — shared across eight disciplines. The framework provides a unified diagnostic vocabulary for identifying when control is misapplied across dimensions. Formalization and empirical validation remain as next steps.
 
 ---
 
@@ -23,7 +23,7 @@ This paper proposes a theory that starts from one axiom — **entropy = randomne
 
 From this mechanism, we derive a diagnostic framework for analyzing why systems fail. We identify three cross-disciplinary fallacy patterns and trace them across eight disciplines. We conclude by proposing antifragility — the balance between rigidity (control-intensity) and flexibility (strategy space) — as a cross-disciplinary meta-standard for evaluating theories, policies, and institutional designs.
 
-Our approach complements traditional science. Where conventional methods ask "Given initial conditions, what will happen?" (state derivation), our theory asks "Given the current distribution of control, which dimensions are being hollowed out by invisible entropy leakage under random shocks?" (risk assessment). The two questions converge in domains where control is deep and leakage is minimal — particle physics, orbital mechanics. They diverge in domains where control is shallow and leakage is high — social systems, organizational design, economic policy. The theory is designed for the latter.
+Our approach complements traditional science. Where conventional methods ask "Given initial conditions, what will happen?" (state derivation), our theory asks "Given the current distribution of control, which dimensions are being hollowed out by invisible entropy leakage under random shocks?" (risk assessment). The theory's strongest applications are in social, organizational, and institutional domains where control is shallow and leakage is high. It is *consistent with* the second law of thermodynamics, *inspired by* biological evolution and ecological resilience, and aims to *derive* novel diagnostic predictions for code-governed systems — but the derivation across all claimed domains remains a research program rather than an established result. The two paradigms converge in domains where control is deep (particle physics, orbital mechanics) and diverge where it is shallow (social systems, economic policy).
 
 ---
 
@@ -86,7 +86,7 @@ A **subsystem** exists within a parent system. In some dimensions, the subsystem
 
 Schrödinger famously described life as feeding on "negative entropy" — absorbing order from the environment to maintain internal order (Schrödinger, 1944). We propose an inversion: **life does not resist entropy; it actively seeks it.** Life feeds on entropy. It searches for randomness in specific dimensions — novel information, external stimuli, environmental energy — ingests it, metabolizes it, and expels the waste. In the process, it maintains low entropy in its critical dimensions.
 
-This inversion resolves a puzzle: why does seeking novelty feel good? Evolution embedded dopamine reward mechanisms that make entropy-seeking behavior pleasurable. Scrolling for new content, exploring unfamiliar terrain, learning a new skill — these are not failures of self-control but manifestations of life's foundational engine. The pleasure of finding new randomness drives the continued ingestion of entropy, which drives the evolutionary cycle forward. Life is not a defender against entropy; it is a predator of entropy.
+This inversion offers a candidate explanation for the puzzle of novelty-seeking: why does encountering new information feel good? One hypothesis, consistent with the framework, is that evolution embedded reward mechanisms — dopamine responses to novel stimuli (Schultz, 1998) — that make entropy-seeking behavior pleasurable. Scrolling for new content, exploring unfamiliar terrain, learning a new skill — these are not failures of self-control but manifestations of life's foundational engine. The pleasure of finding new randomness drives the continued ingestion of entropy, which drives the evolutionary cycle forward. In this sense, life is not merely a defender against entropy; it actively hunts it — a "predator of entropy," to use a deliberate analogy that captures the relationship direction without implying a literal metabolic mechanism.
 
 ### 2.7 Coding and Coding Evolution
 
@@ -136,7 +136,7 @@ Stafford Beer's Viable System Model (Beer, 1972, 1979) and management cybernetic
 
 Holling's adaptive cycle (Holling, 1973) and the panarchy framework (Gunderson & Holling, 2002) describe how social-ecological systems cycle through four phases: exploitation (r), conservation (K), release (Ω), and reorganization (α). The conservation (K) phase corresponds to increasing rigidity — control accumulates, connections become rigid, and the system becomes vulnerable to shocks outside its narrowed strategy space. The release (Ω) phase corresponds to entropy leakage reaching a critical threshold, triggering dimension collapse. The reorganization (α) phase corresponds to the formation of new codes.
 
-The key difference is explanatory: the proposed theory provides a unified mechanism (compression mapping → entropy leakage) that explains *why* the adaptive cycle occurs, rather than merely describing *what* occurs. It also extends the domain beyond ecosystems to include legal systems, programming languages, organizational management, and other code-governed systems.
+The key difference is explanatory ambition: the proposed theory provides a candidate mechanism (compression mapping → entropy leakage) that may explain *why* the adaptive cycle takes the form it does, rather than merely describing *what* occurs. This hypothesis requires formal demonstration. The theory also extends the domain beyond ecosystems to include legal systems, programming languages, organizational management, and other code-governed systems.
 
 ### 3.4 Institutional Economics and Collective Action
 
@@ -230,9 +230,11 @@ PDCA is a micro-scale implementation of the coding-evolution cycle. It enables r
 
 ### 5.3 Chinese Medicine as a System-Practice Precedent
 
-Chinese medicine represents a pre-modern system-level diagnostic practice. Without modern analytical instruments, it infers internal entropy distribution from surface signals: tongue coating, pulse characteristics, facial complexion. Acupuncture is not pain relief through chemical intervention — it is a calibrated micro-perturbation on specific meridian dimensions that redirects entropy flow to unblock congested pathways. Herbal medicine adjusts the rhythm of entropy transformation and release, rather than supplementing specific chemical compounds.
+> *This section describes a diagnostic analogy. It does not endorse or evaluate specific medical claims of Chinese medicine.*
 
-That three practitioners may give three different diagnoses for the same patient is not a defect — it is an inherent property of multi-dimensional system intervention. Different diagnoses may describe different entry points into the same underlying entropy-distribution imbalance. The principle of "treating disease before it manifests" (*zhiweibing*) — detecting entropy-circulation deviations through surface signals before symptoms appear — is a direct application of the diagnostic framework to human physiology.
+Chinese medicine provides an illustrative case of pre-modern system-level diagnostic practice. Without modern analytical instruments, it infers internal entropy distribution from surface signals: tongue coating, pulse characteristics, facial complexion. In this analogy, acupuncture can be understood as a calibrated micro-perturbation on specific meridian dimensions that redirects entropy flow to unblock congested pathways, and herbal medicine as adjusting the rhythm of entropy transformation and release rather than supplementing specific chemical compounds.
+
+That three practitioners may give three different diagnoses for the same patient is not a defect under this interpretation — it is an inherent property of multi-dimensional system intervention. Different diagnoses may describe different entry points into the same underlying entropy-distribution imbalance. The principle of "treating disease before it manifests" (*zhiweibing*) — detecting entropy-circulation deviations through surface signals before symptoms appear — is, from the system-theoretic perspective, a direct application of the diagnostic framework to human physiology.
 
 ---
 
@@ -274,7 +276,7 @@ A formalization program could proceed by (1) defining a multi-dimensional state 
 
 ### 6.4 Complementarity with Traditional Science
 
-The theory's relationship to traditional science is one of complementarity, not replacement. In domains where control is deep and entropy leakage is minimal — particle physics, orbital mechanics, chemical kinetics — state-derivation methods are highly effective. The theory predicts and explains this: when control is near-complete and leakage is near-zero, risk assessment and state derivation converge to the same answer. In domains where control is shallow and leakage is high — social systems, organizational design, economic policy — state-derivation methods systematically fail because they do not track entropy transfer across unmodeled dimensions. The theory provides a complementary diagnostic tool for these domains.
+The theory's relationship to traditional science is one of complementarity, not replacement. In domains where control is deep and entropy leakage is minimal — particle physics, orbital mechanics, chemical kinetics — state-derivation methods are highly effective. The theory predicts and explains this: when control is near-complete and leakage is near-zero, risk assessment and state derivation should, in principle, yield equivalent conclusions. In domains where control is shallow and leakage is high — social systems, organizational design, economic policy — state-derivation methods systematically fail because they do not track entropy transfer across unmodeled dimensions. The theory provides a complementary diagnostic tool for these domains.
 
 ---
 
@@ -307,7 +309,8 @@ The theory is currently qualitative. Its next steps involve operationalizing com
 13. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
 14. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
 15. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423.
-16. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
+16. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
+17. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
 
 ---
 
