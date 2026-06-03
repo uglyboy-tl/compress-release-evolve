@@ -302,7 +302,7 @@ The theory is currently qualitative. Its next steps involve operationalizing com
 6. Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. *Wiener Berichte*, 76, 373–435.
 7. Deming, W. E. (1986). *Out of the Crisis*. MIT Center for Advanced Engineering Study.
 8. Goodhart, C. (1975). Problems of monetary management: The U.K. experience. *Papers in Monetary Economics*, 1, 1–20.
-9. Choi, T. Y., Netland, T. H., Sanders, N., Sodhi, M. S., & Wagner, S. M. (2023). Just-in-time for supply chains in turbulent times. *Production and Operations Management*, 32(7), 2235–2254.
+9. Choi, T. Y., Netland, T. H., Sanders, N., Sodhi, M. S., & Wagner, S. M. (2023). Just-in-time for supply chains in turbulent times. *Production and Operations Management*, 32(7), 2331–2340.
 10. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
 11. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
 12. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
@@ -314,7 +314,7 @@ The theory is currently qualitative. Its next steps involve operationalizing com
 18. Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. *Nature*, 413(6856), 591–596.
 19. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
 20. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
-21. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423.
+21. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423, 623–656.
 22. Siegenfeld, A. F., & Bar-Yam, Y. (2025). A formal definition of scale-dependent complexity and the multi-scale law of requisite variety. *Entropy*, 27(8), 835.
 23. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
 
