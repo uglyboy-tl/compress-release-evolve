@@ -198,8 +198,8 @@ The theory identifies three structural fallacy patterns that recur across eight 
 **Examples:**
 
 - **Economics:** Behavioral economics demonstrates that humans deviate from rational-agent assumptions, but the framework remains "deviation from rationality" rather than questioning whether rationality is the right benchmark. Risk management explains post-hoc why lean production was fragile, but cannot diagnose the fragility before a disaster.
-- **Political Science:** Arrow's impossibility theorem proves that no voting system satisfies all reasonable axioms; public choice theory reveals rent-seeking in voting; deliberative democracy advocates supplement voting with deliberation. All critiques operate within the assumption that voting is the framework — they describe what is lost, but do not question whether the compression mapping itself is the problem.
-- **Management:** Goodhart's Law states that when a measure becomes a target, it ceases to be a good measure. The response is to design better KPIs, balanced scorecards, and OKRs — all of which remain codes operating in the measurable-dimension space.
+- **Political Science:** Arrow's impossibility theorem proves that no voting system can satisfy all reasonable axioms (Arrow, 1951); public choice theory reveals rent-seeking in voting; deliberative democracy advocates supplement voting with deliberation. All critiques operate within the assumption that voting is the framework — they describe what is lost, but do not question whether the compression mapping itself is the problem.
+- **Management:** Goodhart's Law states that when a measure becomes a target, it ceases to be a good measure (Goodhart, 1975). The response is to design better KPIs, balanced scorecards, and OKRs — all of which remain codes operating in the measurable-dimension space.
 
 **Mechanism:** A discipline's code framework is also its legitimacy foundation. To question the code is to question the discipline's basis for existence. Internal critiques therefore converge on improving the code rather than replacing it. This is not intellectual dishonesty — it is a structural property of institutionalized codes.
 
@@ -219,7 +219,7 @@ For any system — a team, a body, a company, a policy — the theory provides a
 
 ### 5.2 PDCA: A Practical Methodology
 
-The Plan-Do-Check-Act (PDCA) cycle, originally developed for total quality management, maps directly onto the theory's operational logic:
+The Plan-Do-Check-Act (PDCA) cycle, originally developed by Shewhart and Deming for total quality management (Deming, 1986), maps directly onto the theory's operational logic:
 
 - **Plan:** Select a dimension and establish a target state. Ensure the target retains sufficient strategy space — do not choose a direction already near its rigidity limit.
 - **Do:** Apply a compression mapping to converge the affected elements toward the target.
@@ -266,7 +266,7 @@ The theory, in its current form, has several significant limitations:
 
 The most promising path to formalization builds on three empirical anchors in the literature:
 
-- **Ecological resilience theory** (Holling, Gunderson) provides measurable "controlling variables" — the slow variables that determine system behavior, which are the ecological equivalent of the theory's "dimensions." Documented regime shifts in lake eutrophication, coral reef degradation, and rangeland desertification provide measurable thresholds corresponding to the theory's "entropy-leakage critical points."
+- **Ecological resilience theory** (Holling, Gunderson) provides measurable "controlling variables" — the slow variables that determine system behavior, which are the ecological equivalent of the theory's "dimensions." Documented regime shifts — for example, the shift from clear-water to turbid states in shallow lakes (Scheffer et al., 2001), coral reef degradation, and rangeland desertification — provide measurable thresholds corresponding to the theory's "entropy-leakage critical points."
 
 - **Ostrom's design principles** (Ostrom, 1990) provide an operationalized checklist of code-structure properties that correlate with institutional survival. These may be reinterpreted as "code antifragility indicators" and tested against the theory's predictions.
 
@@ -294,23 +294,27 @@ The theory is currently qualitative. Its next steps involve operationalizing com
 
 ## References
 
-1. Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.
-2. Arthur, W. B. (2013). *Complexity Economics: A Different Framework for Economic Thought*. SFI Working Paper.
-3. Beer, S. (1972). *Brain of the Firm*. Allen Lane.
-4. Beinhocker, E. D. (2006). *The Origin of Wealth*. Harvard Business School Press.
-5. Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. *Wiener Berichte*, 76, 373–435.
-6. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
-7. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
-8. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
-9. McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
-10. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press.
-11. Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
-12. Ostrom, E. (2005). *Understanding Institutional Diversity*. Princeton University Press.
-13. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
-14. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
-15. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423.
-16. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
-17. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
+1. Arrow, K. J. (1951). *Social Choice and Individual Values*. Wiley.
+2. Ashby, W. R. (1956). *An Introduction to Cybernetics*. Chapman & Hall.
+3. Arthur, W. B. (2013). *Complexity Economics: A Different Framework for Economic Thought*. SFI Working Paper.
+4. Beer, S. (1972). *Brain of the Firm*. Allen Lane.
+5. Beinhocker, E. D. (2006). *The Origin of Wealth*. Harvard Business School Press.
+6. Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. *Wiener Berichte*, 76, 373–435.
+7. Deming, W. E. (1986). *Out of the Crisis*. MIT Center for Advanced Engineering Study.
+8. Goodhart, C. (1975). Problems of monetary management: The U.K. experience. *Papers in Monetary Economics*, 1, 1–20.
+9. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
+10. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
+11. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
+12. McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
+13. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press.
+14. Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
+15. Ostrom, E. (2005). *Understanding Institutional Diversity*. Princeton University Press.
+16. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
+17. Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. *Nature*, 413(6856), 591–596.
+18. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
+19. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
+20. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423.
+21. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
 
 ---
 
