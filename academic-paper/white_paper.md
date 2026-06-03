@@ -185,7 +185,7 @@ The theory identifies three structural fallacy patterns that recur across eight 
 
 **Examples:**
 
-- **Lean production:** Zero-inventory, just-in-time delivery maximizes efficiency in the measurable dimension of inventory turnover, but eliminates the buffer dimension that absorbs supply-chain shocks. The COVID-19 pandemic revealed the fragility of this optimization.
+- **Lean production:** Zero-inventory, just-in-time delivery maximizes efficiency in the measurable dimension of inventory turnover, but eliminates the buffer dimension that absorbs supply-chain shocks. The COVID-19 pandemic revealed the fragility of this optimization (Choi et al., 2023).
 - **Scientific evaluation:** Impact factors, citation counts, and publication numbers compress all research activity into countable dimensions. Negative results, replication studies, and paradigm-challenging work — essential for science's self-correcting mechanism — are filtered out of the "publishable" category.
 - **GDP-centered development:** GDP measures the aggregate value of goods and services but remains blind to households on the "poverty knife-edge" (one emergency from destitution), the erosion of social trust, and the depletion of natural capital.
 
@@ -266,7 +266,7 @@ The theory, in its current form, has several significant limitations:
 
 The most promising path to formalization builds on three empirical anchors in the literature:
 
-- **Ecological resilience theory** (Holling, Gunderson) provides measurable "controlling variables" — the slow variables that determine system behavior, which are the ecological equivalent of the theory's "dimensions." Documented regime shifts — for example, the shift from clear-water to turbid states in shallow lakes (Scheffer et al., 2001), coral reef degradation, and rangeland desertification — provide measurable thresholds corresponding to the theory's "entropy-leakage critical points."
+- **Ecological resilience theory** (Holling, Gunderson) provides measurable "controlling variables" — the slow variables that determine system behavior, which are the ecological equivalent of the theory's "dimensions." Documented regime shifts — for example, the shift from clear-water to turbid states in shallow lakes (Scheffer et al., 2001), coral reef degradation, and rangeland desertification — provide measurable thresholds corresponding to the theory's "entropy-leakage critical points." More recent work generalizing Ashby's law to multi-scale systems (Siegenfeld & Bar-Yam, 2025) suggests a formal pathway for extending requisite-variety reasoning across hierarchical levels.
 
 - **Ostrom's design principles** (Ostrom, 1990) provide an operationalized checklist of code-structure properties that correlate with institutional survival. These may be reinterpreted as "code antifragility indicators" and tested against the theory's predictions.
 
@@ -302,19 +302,21 @@ The theory is currently qualitative. Its next steps involve operationalizing com
 6. Boltzmann, L. (1877). Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung. *Wiener Berichte*, 76, 373–435.
 7. Deming, W. E. (1986). *Out of the Crisis*. MIT Center for Advanced Engineering Study.
 8. Goodhart, C. (1975). Problems of monetary management: The U.K. experience. *Papers in Monetary Economics*, 1, 1–20.
-9. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
-10. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
-11. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
-12. McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
-13. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press.
-14. Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
-15. Ostrom, E. (2005). *Understanding Institutional Diversity*. Princeton University Press.
-16. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
-17. Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. *Nature*, 413(6856), 591–596.
-18. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
-19. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
-20. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423.
-21. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
+9. Choi, T. Y., Netland, T. H., Sanders, N., Sodhi, M. S., & Wagner, S. M. (2023). Just-in-time for supply chains in turbulent times. *Production and Operations Management*, 32(7), 2235–2254.
+10. Gunderson, L. H., & Holling, C. S. (Eds.). (2002). *Panarchy: Understanding Transformations in Human and Natural Systems*. Island Press.
+11. Holling, C. S. (1973). Resilience and stability of ecological systems. *Annual Review of Ecology and Systematics*, 4, 1–23.
+12. Innis, H. A. (1951). *The Bias of Communication*. University of Toronto Press.
+13. McLuhan, M. (1964). *Understanding Media: The Extensions of Man*. McGraw-Hill.
+14. North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press.
+15. Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
+16. Ostrom, E. (2005). *Understanding Institutional Diversity*. Princeton University Press.
+17. Prigogine, I., & Stengers, I. (1984). *Order out of Chaos: Man's New Dialogue with Nature*. Bantam Books.
+18. Scheffer, M., Carpenter, S., Foley, J. A., Folke, C., & Walker, B. (2001). Catastrophic shifts in ecosystems. *Nature*, 413(6856), 591–596.
+19. Schrödinger, E. (1944). *What is Life?* Cambridge University Press.
+20. Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology*, 80(1), 1–27.
+21. Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27, 379–423.
+22. Siegenfeld, A. F., & Bar-Yam, Y. (2025). A formal definition of scale-dependent complexity and the multi-scale law of requisite variety. *Entropy*, 27(8), 835.
+23. Taleb, N. N. (2012). *Antifragile: Things That Gain from Disorder*. Random House.
 
 ---
 
