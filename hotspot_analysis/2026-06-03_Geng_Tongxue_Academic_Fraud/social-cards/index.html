@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="indigo-porcelain">
+<head>
+  <meta charset="utf-8">
+  <title>当一个退学博士，掀翻了整个学术界的牌桌 · Social Card Set</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <style>
+    *,*::before,*::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #1a1a1a;
+      font-family: var(--sans-zh);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 64px 32px;
+    }
+    .sheet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
+    /* ---------- Theme tokens: Indigo Porcelain ---------- */
+    :root,
+    [data-theme="indigo-porcelain"] {
+      --paper:     #f2f4f5;
+      --paper-2:   #e5ebef;
+      --ink:       #0a1f3d;
+      --muted:     #5f6d78;
+      --line:      rgba(10,31,61,.20);
+      --accent:    #315d93;
+      --accent-soft: #d7e1ec;
+      --ink-rgb: 10,31,61;
+      --paper-rgb: 242,244,245;
+      --accent-rgb: 49,93,147;
+    }
+
+    /* ---------- Typography stack ---------- */
+    :root {
+      --serif-zh: "LXGW WenKai GB Screen", "Noto Serif SC", "Songti SC", "STSong", serif;
+      --serif-en: "LXGW WenKai GB Screen", "Playfair Display", "Noto Serif SC", serif;
+      --sans-zh: "Noto Sans SC", -apple-system, "PingFang SC", "Microsoft YaHei UI", sans-serif;
+      --sans-en: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+    }
+
+    /* ---------- Poster boards ---------- */
+    .poster {
+      position: relative;
+      background: var(--paper);
+      color: var(--ink);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .poster.xhs    { width: 1080px; height: 1440px; }
+    .poster.square { width: 1080px; height: 1080px; }
+    .poster.wide   { width: 2100px; height:  900px; }
+    .poster figure { margin: 0; }
+
+    .poster.xhs    .content { padding: 96px 88px; }
+    .poster.square .content { padding: 88px 88px; }
+    .poster.wide   .content { padding: 88px 120px; }
+    .content { position: relative; width: 100%; height: 100%; z-index: 2; }
+
+    /* ---------- WeChat pair preview ---------- */
+    .wc-pair {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+      padding: 48px 0;
+      background: #1a1a1a;
+      border-radius: 16px;
+    }
+    .wc-pair-label {
+      font-family: var(--mono);
+      font-size: 24px;
+      color: #888;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .wc-wide-wrap { transform: scale(0.5); transform-origin: top center; margin-bottom: -450px; }
+    .wc-square-wrap { transform: scale(0.7); transform-origin: top center; margin-bottom: -324px; }
+
+    /* ---------- Background layers ---------- */
+    .mag-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .grain {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .35;
+      mix-blend-mode: multiply;
+      background-image: radial-gradient(rgba(0,0,0,.045) 1px, transparent 1px);
+      background-size: 3px 3px;
+    }
+
+    /* ---------- Typography ---------- */
+    .kicker {
+      font-family: var(--mono);
+      font-size: 21px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+      margin: 0 0 18px;
+    }
+    .h-display {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 124px;
+      line-height: 1.06;
+      letter-spacing: .04em;
+      margin: 0 0 24px;
+      color: var(--ink);
+    }
+    .h-xl {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 88px;
+      line-height: 1.10;
+      letter-spacing: .03em;
+      margin: 0 0 24px;
+      color: var(--ink);
+    }
+    .h-md {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 1.18;
+      letter-spacing: .02em;
+      margin: 0 0 18px;
+      color: var(--ink);
+    }
+    .h-sub {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 36px;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+    .lead {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.55;
+      color: rgba(var(--ink-rgb), .82);
+      margin: 0 0 24px;
+    }
+    .body {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.65;
+      color: rgba(var(--ink-rgb), .80);
+      margin: 0 0 18px;
+    }
+    .meta {
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+    }
+    .label {
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+    }
+    .pullquote {
+      font-family: var(--serif-zh);
+      font-style: italic;
+      font-weight: 500;
+      font-size: 64px;
+      line-height: 1.28;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* ---------- Layout primitives ---------- */
+    .stack    { display: flex; flex-direction: column; }
+    .gap-1    { gap: 12px; }
+    .gap-2    { gap: 24px; }
+    .gap-3    { gap: 36px; }
+    .gap-4    { gap: 48px; }
+    .gap-5    { gap: 64px; }
+    .row      { display: flex; flex-direction: row; }
+    .col-2    { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .rule     { height: 1px; background: var(--line); border: 0; margin: 24px 0; }
+
+    /* ---------- Issue elements ---------- */
+    .issue-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .issue-row .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .issue-strip {
+      position: absolute;
+      left: 88px;
+      right: 88px;
+      bottom: 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    /* ---------- Image containers ---------- */
+    .frame-img {
+      position: relative;
+      overflow: hidden;
+      background: var(--paper-2);
+      display: block;
+      margin: 0;
+    }
+    .frame-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 50%;
+      display: block;
+    }
+    .frame-img.r-16x10 { aspect-ratio: 16 / 10; }
+    .frame-img.r-4x3   { aspect-ratio: 4 / 3; }
+    .frame-img.r-3x2   { aspect-ratio: 3 / 2; }
+    .img-cap {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+
+    /* ---------- Magazine components ---------- */
+    .callout {
+      border-left: 3px solid var(--accent);
+      padding: 18px 28px;
+      font-family: var(--serif-zh);
+      font-style: italic;
+      font-size: 36px;
+      line-height: 1.35;
+      color: var(--ink);
+      background: var(--paper-2);
+    }
+    .callout .callout-src {
+      display: block;
+      margin-top: 18px;
+      font-style: normal;
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      color: var(--muted);
+    }
+
+    .ledger { display: flex; flex-direction: column; }
+    .ledger-row {
+      display: grid;
+      grid-template-columns: 96px 1fr auto;
+      gap: 24px;
+      align-items: baseline;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .ledger-row .ledger-nb {
+      font-family: var(--mono);
+      font-size: 28px;
+      color: var(--accent);
+      letter-spacing: .08em;
+    }
+    .ledger-row .ledger-title {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 42px;
+      letter-spacing: .02em;
+      color: var(--ink);
+    }
+    .ledger-row .ledger-note {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.55;
+      color: rgba(var(--ink-rgb), .72);
+    }
+
+    .marginalia {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 48px;
+    }
+    .marginalia .mg-col {
+      border-left: 1px solid var(--line);
+      padding-left: 24px;
+    }
+    .marginalia .mg-col p {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .04em;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+
+    .pipeline-v { display: flex; flex-direction: column; gap: 28px; }
+    .pipeline-v .step {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 28px;
+      align-items: baseline;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .pipeline-v .step:last-child { border-bottom: 0; }
+    .pipeline-v .step-nb {
+      font-family: var(--mono);
+      font-size: 32px;
+      color: var(--accent);
+    }
+    .pipeline-v .step-title {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 40px;
+      letter-spacing: .02em;
+      margin: 0 0 8px;
+    }
+    .pipeline-v .step-desc {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.6;
+      color: rgba(var(--ink-rgb), .72);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+
+    <!-- ===== P1: M01 Magazine Issue Cover ===== -->
+    <section class="poster xhs" id="xhs-01">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-4">
+        <div class="issue-row">
+          <span>Vol. 01</span><span class="dot"></span><span>2026.06</span>
+        </div>
+        <div class="stack gap-2">
+          <p class="kicker" style="font-size:22px">学术系统 · 深度分析</p>
+          <h1 class="h-display" style="font-size:96px">
+            当一个退学博士<br>掀翻了学术界<br>的牌桌
+          </h1>
+          <p class="h-sub">The system is the problem, not the people.</p>
+        </div>
+        <figure class="frame-img r-16x10">
+          <img src="assets/cover-library.jpg" alt="图书馆书架">
+        </figure>
+        <p class="lead">耿同学打假不是个人勇气故事，而是一个系统失控的寓言。</p>
+      </div>
+      <div class="issue-strip">
+        <span>Issue · Academic System</span>
+        <span>—</span>
+        <span>Compress · Release · Evolve</span>
+      </div>
+    </section>
+
+    <!-- ===== P2: M11 Marginalia Essay — 论文是怎么变成目的的 ===== -->
+    <section class="poster xhs" id="xhs-02">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-3">
+        <p class="kicker">Part 1 · 编码反转</p>
+        <h2 class="h-xl" style="font-size:78px;line-height:1.08">
+          论文是怎么<br>变成目的的
+        </h2>
+        <div class="marginalia" style="margin-top:12px">
+          <div class="stack gap-2">
+            <p class="body" style="font-size:26px;line-height:1.65">
+              学术系统的核心目的，应该是创造新知识。但现在，系统实际运转的核心逻辑是发论文。
+              一个研究者能不能毕业、能不能拿项目、能不能评上杰青，不取决于他解决了什么问题，
+              而取决于他发了多少篇、发在哪个刊物上。
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              这就是“编码反转”：手段变成了目的，编码取代了现实。当整个系统把“发论文”这个编码
+              当作核心控制目标时，复杂的科研活动——探索、失败、思考、突破——被压缩成了
+              单一维度的指标。
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              一个研究者从入学第一天起就知道这个规则。耿同学打假触及的每一个造假者，
+              都曾是这个编码反转的产物：他们不是天生坏人，他们只是学会了在规则里生存。
+            </p>
+          </div>
+          <div class="mg-col">
+            <p>手段变成目的</p>
+            <p>编码取代现实</p>
+            <p>产出取代价值</p>
+            <p>论文数量 = 一切</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== P3: M14 Vertical Pipeline — 压缩的代价 ===== -->
+    <section class="poster xhs" id="xhs-03">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-4">
+        <p class="kicker">Part 2 · 熵转移</p>
+        <h2 class="h-xl" style="font-size:78px">
+          压缩的代价
+        </h2>
+        <p class="lead" style="margin-bottom:20px">压缩映射的铁律：总熵不会减少，只是从一个维度转移到另一个维度。</p>
+        <div class="pipeline-v">
+          <div class="step">
+            <div class="step-nb">01</div>
+            <div>
+              <h3 class="step-title">学术造假</h3>
+              <p class="step-desc">当"结果好看"比"过程真实"更重要，数据造假就成了理性选择。耿同学发现那些"等差数列"般的完美数据，不是个别学者的道德沦丧，而是系统性压力的必然产物。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-nb">02</div>
+            <div>
+              <h3 class="step-title">研究空心化</h3>
+              <p class="step-desc">很多课题做不做都一样，无非是为了拿项目、发论文。当评价体系只看论文不看价值，大量科研资源被浪费在无效研究上。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-nb">03</div>
+            <div>
+              <h3 class="step-title">监管集体失明</h3>
+              <p class="step-desc">学术委员会、同行评审、项目验收——这些本应是学术诚信的防线，却集体陷入自指闭环。所有改革都在现有编码框架内修补，从不质疑根本问题：只看论文，够吗？</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== P4: M11 Marginalia Essay — 核心洞察 ===== -->
+    <section class="poster xhs" id="xhs-04">
+      <canvas class="mag-bg" data-bg="ink-flow" style="opacity:.62"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-3">
+        <p class="kicker">Part 3 · 自指闭环</p>
+        <h2 class="h-xl" style="font-size:64px;line-height:1.12">
+          一个退学博士十几个小时<br>就能发现的问题，整个<br>学术系统几十年都没发现
+        </h2>
+        <div class="marginalia" style="margin-top:12px">
+          <div class="stack gap-2">
+            <p class="body" style="font-size:26px;line-height:1.65">
+              耿同学用的工具并不复杂：程序比对数据、肉眼识别异常。他从发现问题到发布视频，用时不过十几个小时。
+              为什么学术委员会、同行评审、项目验收——几十年都没发现？
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              不是因为学术界没有聪明人。而是整个系统的"注意力分配"被编码锁死了。委员会关注学校声誉，
+              评审关注创新性表述，验收关注经费使用率——没有人被授权去关注"数据本身是不是假的"。
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              当耿同学联系一所高校的学术委员会时，委员会的第一反应不是调查论文，而是让涉事作者联系他删稿。
+              编码内部的反馈回路，永远倾向于维护编码本身，而不是修正编码的错误。
+            </p>
+          </div>
+          <div class="mg-col">
+            <p>自指闭环</p>
+            <p>注意力锁死</p>
+            <p>声誉 > 真相</p>
+            <p>编码维护本能</p>
+          </div>
+        </div>
+      </div>
+      <div class="issue-strip">
+        <span>Self-referential Closure</span>
+        <span>—</span>
+        <span>Page 4 · 7</span>
+      </div>
+    </section>
+
+    <!-- ===== P5: M11 Marginalia Essay — 为什么系统自己解决不了 ===== -->
+    <section class="poster xhs" id="xhs-05">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-3">
+        <p class="kicker">Part 4 · 进化困境</p>
+        <h2 class="h-xl" style="font-size:78px">
+          为什么系统<br>自己解决不了
+        </h2>
+        <div class="marginalia" style="margin-top:12px">
+          <div class="stack gap-2">
+            <p class="body" style="font-size:26px;line-height:1.65">
+              耿同学的故事让人想起一个规律：当编码结构从灵活变得刚性，系统就进入了"编码锁定"状态。
+              所有子系统——学位授予、职称评审、经费分配——都围绕论文这个编码生长出复杂的依赖关系，
+              整个体系变得高度耦合。
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              高度耦合的系统很难自我革命。任何对核心编码的修改，都会牵动所有子系统的利益重新分配。
+              学术委员会、期刊编辑、项目评审人——他们都是现有编码的受益者，也是现有编码的维护者。
+              让他们投票改变规则，就像让议会投票废除议会一样困难。
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              耿同学的介入本身就是一种熵释放——不是在学术研究这个系统上，而是在学术治理这个系统上。
+              他不发论文，也不做科研，他只是一个站在系统外面的旁观者，用数据比对的方式解构了学术界的权威。
+              但外部冲击只能打破旧编码，不能建立新编码。打破之后，用什么来替代？
+            </p>
+          </div>
+          <div class="mg-col">
+            <p>编码锁定</p>
+            <p>结构刚性</p>
+            <p>高度耦合</p>
+            <p>无法自我革命</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== P6a: M14 Vertical Pipeline — 好学术(上) ===== -->
+    <section class="poster xhs" id="xhs-06">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-4">
+        <p class="kicker">Part 5 · 熵释放维度</p>
+        <h2 class="h-xl" style="font-size:72px;line-height:1.08">
+          真正的好学术<br>需要容纳熵
+        </h2>
+        <p class="lead" style="margin-bottom:16px">真正的改变，需要重新定义什么是"好学术"——不是缩减熵，而是为熵的释放提供合法空间。</p>
+        <div class="pipeline-v">
+          <div class="step">
+            <div class="step-nb">01</div>
+            <div>
+              <h3 class="step-title">容纳有价值的失败</h3>
+              <p class="step-desc">证明"此路不通"的实验，与发现"新路径"的实验，在信息量上是等价的。如果系统不允许失败的编码存在，研究者就会被迫伪造成功。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-nb">02</div>
+            <div>
+              <h3 class="step-title">容纳非共识的探索</h3>
+              <p class="step-desc">好学术不一定是"正确"的学术，而可能是"不同"的学术。历史上许多重大突破，恰恰来自那些被视为异端的编码组合。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-nb">03</div>
+            <div>
+              <h3 class="step-title">容纳过程的可见性</h3>
+              <p class="step-desc">如果研究过程——包括失败的尝试、参数的调整、偶然的发现——都成为可追溯的编码，学术诚信就不再依赖于事后审查，而是在过程中自然涌现。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== P6b: M14 Vertical Pipeline — 好学术(下) ===== -->
+    <section class="poster xhs" id="xhs-06b">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-4">
+        <p class="kicker">Part 5 · 熵释放维度（续）</p>
+        <h2 class="h-xl" style="font-size:72px;line-height:1.08">
+          真正的好学术<br>需要容纳熵
+        </h2>
+        <div class="pipeline-v">
+          <div class="step">
+            <div class="step-nb">04</div>
+            <div>
+              <h3 class="step-title">容纳实验验证的多样性</h3>
+              <p class="step-desc">同一实验被不同人在不同条件下重复，每次重复都为知识增加新的编码层。编码能够承受更多独立验证时，系统才具备真正的稳健性。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-nb">05</div>
+            <div>
+              <h3 class="step-title">从效率优先转向复杂性优先</h3>
+              <p class="step-desc">接受一定程度的"冗余"和"慢"。表面上的效率损失，换来的是编码组合的更多可能。大佬给出核心编码，众人共同建构——这才是学术进化的本貌。</p>
+            </div>
+          </div>
+        </div>
+        <p class="lead" style="margin-top:16px;font-size:24px;line-height:1.6">
+          这五个维度不是一套制度方案，而是一种观念转换：从"如何压缩出更多论文"转向"如何释放更多复杂性"。
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== P7: M11 Marginalia Essay — 打破之后 ===== -->
+    <section class="poster xhs" id="xhs-07">
+      <canvas class="mag-bg" data-bg="ink-flow" style="opacity:.62"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-3">
+        <p class="kicker">Part 6 · 结论</p>
+        <h2 class="h-xl" style="font-size:88px;line-height:1.08">
+          打破之后
+        </h2>
+        <div class="marginalia" style="margin-top:12px">
+          <div class="stack gap-2">
+            <p class="body" style="font-size:28px;line-height:1.55;font-style:italic">
+              "我更希望改变学术造假的土壤，而不是一个一个去抓人。"
+              <span style="display:block;font-style:normal;font-size:22px;color:var(--muted);margin-top:6px">—— 耿同学</span>
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              他能做的，也仅止于此。他能指出土壤有问题，但他不能重新设计土壤。他能打破旧的编码，但他不能建立新的编码。他是一个有力的破坏者，但破坏之后的重建，需要另一种能力。
+            </p>
+            <p class="body" style="font-size:26px;line-height:1.65">
+              一个健康的系统，不应该依赖外部冲击来维持运转。它需要重新定义什么是"好学术"，为熵的释放提供合法的空间，让编码的组合与重组成为常态。这才是打破之后，真正需要做的事。
+            </p>
+          </div>
+          <div class="mg-col">
+            <p>破坏者 ≠ 重建者</p>
+            <p>好学术 = 容纳熵</p>
+            <p>编码组合与重组</p>
+            <p>系统自代谢</p>
+          </div>
+        </div>
+      </div>
+      <div class="issue-strip">
+        <span>End · Page 7</span>
+        <span>—</span>
+        <span>Compress · Release · Evolve</span>
+      </div>
+    </section>
+
+    <!-- ===== W1: WeChat 21:9 Main Cover ===== -->
+    <section class="poster wide" id="wechat-21x9">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-3" style="flex-direction:row; align-items:center; justify-content:space-between">
+        <div class="stack gap-3" style="flex:0 0 820px">
+          <div class="issue-row">
+            <span>Vol. 01</span><span class="dot"></span><span>2026.06</span><span class="dot"></span><span>学术系统 · 深度分析</span>
+          </div>
+          <div class="stack gap-2">
+            <p class="kicker" style="font-size:24px">当论文变成了目的，系统就开始失控</p>
+            <h1 class="h-display" style="font-size:108px;line-height:1.06">
+              当一个退学博士<br>掀翻了学术界<br>的牌桌
+            </h1>
+            <p class="h-sub">The system is the problem, not the people.</p>
+          </div>
+          <p class="lead" style="max-width:760px">耿同学打假不是个人勇气故事，而是一个系统失控的寓言——当「编码反转」发生，造假就不再是偶然事件。</p>
+        </div>
+        <figure class="frame-img r-4x3" style="flex:0 0 760px">
+          <img src="assets/cover-library.jpg" alt="图书馆书架">
+        </figure>
+      </div>
+      <div class="issue-strip">
+        <span>Issue · Academic System</span>
+        <span>—</span>
+        <span>Compress · Release · Evolve</span>
+      </div>
+    </section>
+
+    <!-- ===== W2: WeChat 1:1 Square Cover ===== -->
+    <section class="poster square" id="wechat-1x1">
+      <canvas class="mag-bg" data-bg="ink-flow" style="opacity:.62"></canvas>
+      <div class="grain"></div>
+      <div class="content stack gap-4" style="justify-content:center; align-items:center">
+        <h1 class="h-display" style="font-size:132px;line-height:1.12;text-align:center">
+          这不是<br>一个关于<br>勇气的故事
+        </h1>
+      </div>
+    </section>
+
+    <!-- ===== WeChat Pair Preview ===== -->
+    <div class="wc-pair">
+      <p class="wc-pair-label">WeChat Cover Pair Preview</p>
+      <div class="wc-wide-wrap">
+        <div style="width:2100px;height:900px;position:relative;background:var(--paper);color:var(--ink);overflow:hidden">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;padding:0 120px">
+            <div class="stack gap-3" style="flex:0 0 820px">
+              <div style="display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:16px;color:var(--muted);letter-spacing:.12em">
+                <span>Vol. 01</span><span>·</span><span>2026.06</span><span>·</span><span>学术系统 · 深度分析</span>
+              </div>
+              <div>
+                <p style="font-family:var(--mono);font-size:24px;color:var(--muted);margin:0 0 8px;letter-spacing:.08em">当论文变成了目的，系统就开始失控</p>
+                <h1 style="font-family:var(--serif-zh);font-weight:500;font-size:108px;line-height:1.06;margin:0;color:var(--ink)">
+                  当一个退学博士<br>掀翻了学术界<br>的牌桌
+                </h1>
+                <p style="font-family:var(--serif-en);font-size:26px;color:var(--muted);margin:8px 0 0;font-style:italic">The system is the problem, not the people.</p>
+              </div>
+              <p style="font-family:var(--sans-zh);font-size:24px;color:var(--muted);max-width:760px;line-height:1.6">耿同学打假不是个人勇气故事，而是一个系统失控的寓言——当「编码反转」发生，造假就不再是偶然事件。</p>
+            </div>
+            <div style="flex:0 0 760px;height:560px;background:var(--accent-soft);border-radius:4px;margin-left:80px;display:flex;align-items:center;justify-content:center">
+              <span style="font-family:var(--mono);font-size:18px;color:var(--muted)">📚</span>
+            </div>
+          </div>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:48px;border-top:1px solid var(--line);display:flex;align-items:center;padding:0 120px;font-family:var(--mono);font-size:16px;color:var(--muted);letter-spacing:.12em;gap:12px">
+            <span>Issue · Academic System</span><span>—</span><span>Compress · Release · Evolve</span>
+          </div>
+        </div>
+      </div>
+      <div class="wc-square-wrap">
+        <div style="width:1080px;height:1080px;position:relative;background:var(--paper);color:var(--ink);overflow:hidden;display:flex;align-items:center;justify-content:center">
+           <h1 style="font-family:var(--serif-zh);font-weight:500;font-size:132px;line-height:1.12;text-align:center;margin:0">这不是<br>一个关于<br>勇气的故事</h1>
+          <div style="position:absolute;bottom:0;left:0;right:0;height:48px;border-top:1px solid var(--line);display:flex;align-items:center;padding:0 88px;font-family:var(--mono);font-size:16px;color:var(--muted);letter-spacing:.12em;gap:12px">
+            <span>Vol. 01</span><span>—</span><span>Compress · Release · Evolve</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/magazine-bg-webgl.js"></script>
+  <script>
+    (function () {
+      function cssVarRgb(name, fallback) {
+        var raw = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+        if (!raw) return fallback;
+        var parts = raw.split(',').map(function (x) { return parseInt(x.trim(), 10); });
+        return parts.length === 3 && parts.every(function (n) { return !isNaN(n); }) ? parts : fallback;
+      }
+      function mountAll() {
+        if (!window.MagazineBg || !window.MagazineBg.mount) return;
+        var ink    = cssVarRgb('--ink-rgb',    [10, 31, 61]);
+        var paper  = cssVarRgb('--paper-rgb',  [242, 244, 245]);
+        var accent = cssVarRgb('--accent-rgb', [49, 93, 147]);
+        document.querySelectorAll('canvas.mag-bg').forEach(function (c) {
+          var strength = c.closest('.poster') && c.closest('.poster').style.opacity
+            ? parseFloat(c.closest('.poster').style.opacity)
+            : (c.hasAttribute('style') && c.getAttribute('style').indexOf('opacity') > -1
+              ? parseFloat(c.style.opacity)
+              : 0.32);
+          window.MagazineBg.mount(c, {
+            ink: ink,
+            paper: paper,
+            accent: accent,
+            strength: strength || 0.32,
+            frozenTime: 12.5 + Math.random() * 2
+          });
+        });
+      }
+      if (document.readyState === 'complete') mountAll();
+      else window.addEventListener('load', mountAll);
+    })();
+  </script>
+</body>
+</html>
