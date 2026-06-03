@@ -1,0 +1,549 @@
+{
+  "document": {
+    "title": "Compression, Release, and Evolution: A Unified Systems Theory from Entropy",
+    "author": "[Author Name]",
+    "date": "2026-06-02",
+    "source_file": "../white_paper.md",
+    "reader_version": "1.0",
+    "created_at": "2026-06-03"
+  },
+  "blocks": [
+    {
+      "id": "S001",
+      "type": "abstract",
+      "source_section": "Abstract",
+      "page_ref": "1.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S002",
+      "type": "body",
+      "source_section": "1. Introduction",
+      "page_ref": "1.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S003",
+      "type": "body",
+      "source_section": "1. Introduction",
+      "page_ref": "1.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S004",
+      "type": "body",
+      "source_section": "1. Introduction",
+      "page_ref": "1.4",
+      "confidence": 1.0
+    },
+    {
+      "id": "S005",
+      "type": "body",
+      "source_section": "1. Introduction",
+      "page_ref": "1.5",
+      "confidence": 1.0
+    },
+    {
+      "id": "S006",
+      "type": "body",
+      "source_section": "1. Introduction",
+      "page_ref": "1.6",
+      "confidence": 1.0
+    },
+    {
+      "id": "S007",
+      "type": "body",
+      "source_section": "1. Introduction",
+      "page_ref": "1.7",
+      "confidence": 1.0
+    },
+    {
+      "id": "S008",
+      "type": "body",
+      "source_section": "2.1 Entropy",
+      "page_ref": "2.1.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S009",
+      "type": "body",
+      "source_section": "2.1 Entropy",
+      "page_ref": "2.1.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S010",
+      "type": "body",
+      "source_section": "2.1 Entropy",
+      "page_ref": "2.1.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S011",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S012",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S013",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S014",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.4",
+      "confidence": 1.0
+    },
+    {
+      "id": "S015",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.5",
+      "confidence": 1.0
+    },
+    {
+      "id": "S016",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.6",
+      "confidence": 1.0
+    },
+    {
+      "id": "S017",
+      "type": "body",
+      "source_section": "2.2 Control as Compression Mapping",
+      "page_ref": "2.2.7",
+      "confidence": 1.0
+    },
+    {
+      "id": "S018",
+      "type": "body",
+      "source_section": "2.3 Rigidity and Flexibility",
+      "page_ref": "2.3.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S019",
+      "type": "body",
+      "source_section": "2.3 Rigidity and Flexibility",
+      "page_ref": "2.3.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S020",
+      "type": "body",
+      "source_section": "2.3 Rigidity and Flexibility",
+      "page_ref": "2.3.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S021",
+      "type": "body",
+      "source_section": "2.3 Rigidity and Flexibility",
+      "page_ref": "2.3.4",
+      "confidence": 1.0
+    },
+    {
+      "id": "S022",
+      "type": "body",
+      "source_section": "2.4 Antifragility",
+      "page_ref": "2.4.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S023",
+      "type": "body",
+      "source_section": "2.4 Antifragility",
+      "page_ref": "2.4.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S024",
+      "type": "body",
+      "source_section": "2.4 Antifragility",
+      "page_ref": "2.4.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S025",
+      "type": "body",
+      "source_section": "2.4 Antifragility",
+      "page_ref": "2.4.4",
+      "confidence": 1.0
+    },
+    {
+      "id": "S026",
+      "type": "body",
+      "source_section": "2.4 Antifragility",
+      "page_ref": "2.4.5",
+      "confidence": 1.0
+    },
+    {
+      "id": "S027",
+      "type": "body",
+      "source_section": "2.4 Antifragility",
+      "page_ref": "2.4.6",
+      "confidence": 1.0
+    },
+    {
+      "id": "S028",
+      "type": "body",
+      "source_section": "2.5 System, Subsystem, and Heat Dissipation",
+      "page_ref": "2.5.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S029",
+      "type": "body",
+      "source_section": "2.5 System, Subsystem, and Heat Dissipation",
+      "page_ref": "2.5.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S030",
+      "type": "body",
+      "source_section": "2.5 System, Subsystem, and Heat Dissipation",
+      "page_ref": "2.5.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S031",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S032",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S033",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S034",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.4",
+      "confidence": 1.0
+    },
+    {
+      "id": "S035",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.5",
+      "confidence": 1.0
+    },
+    {
+      "id": "S036",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.6",
+      "confidence": 1.0
+    },
+    {
+      "id": "S037",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.7",
+      "confidence": 1.0
+    },
+    {
+      "id": "S038",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.8",
+      "confidence": 1.0
+    },
+    {
+      "id": "S039",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.9",
+      "confidence": 1.0
+    },
+    {
+      "id": "S040",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.10",
+      "confidence": 1.0
+    },
+    {
+      "id": "S041",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.11",
+      "confidence": 1.0
+    },
+    {
+      "id": "S042",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.12",
+      "confidence": 1.0
+    },
+    {
+      "id": "S043",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.13",
+      "confidence": 1.0
+    },
+    {
+      "id": "S044",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.14",
+      "confidence": 1.0
+    },
+    {
+      "id": "S045",
+      "type": "body",
+      "source_section": "2.6 Coding and the Universal Paradigm of Evolution",
+      "page_ref": "2.6.15",
+      "confidence": 1.0
+    },
+    {
+      "id": "S046",
+      "type": "body",
+      "source_section": "3. Relation to Existing Theories",
+      "page_ref": "3.0",
+      "confidence": 1.0
+    },
+    {
+      "id": "S047",
+      "type": "body",
+      "source_section": "3.1 Thermodynamics and Information Theory",
+      "page_ref": "3.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S048",
+      "type": "body",
+      "source_section": "3.2 Cybernetics and Control Theory",
+      "page_ref": "3.2.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S049",
+      "type": "body",
+      "source_section": "3.2 Cybernetics and Control Theory",
+      "page_ref": "3.2.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S050",
+      "type": "body",
+      "source_section": "3.3 Ecological Resilience and Panarchy",
+      "page_ref": "3.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S051",
+      "type": "body",
+      "source_section": "3.3 Ecological Resilience and Panarchy",
+      "page_ref": "3.3.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S052",
+      "type": "body",
+      "source_section": "3.4 Institutional Economics and Collective Action",
+      "page_ref": "3.4.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S053",
+      "type": "body",
+      "source_section": "3.4 Institutional Economics and Collective Action",
+      "page_ref": "3.4.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S054",
+      "type": "body",
+      "source_section": "3.5 Complexity Economics",
+      "page_ref": "3.5",
+      "confidence": 1.0
+    },
+    {
+      "id": "S055",
+      "type": "body",
+      "source_section": "3.6 Novel Contributions",
+      "page_ref": "3.6",
+      "confidence": 1.0
+    },
+    {
+      "id": "S056",
+      "type": "body",
+      "source_section": "4. Cross-Disciplinary Analysis",
+      "page_ref": "4.0",
+      "confidence": 1.0
+    },
+    {
+      "id": "S057",
+      "type": "body",
+      "source_section": "4.1 Coding Reversal",
+      "page_ref": "4.1.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S058",
+      "type": "body",
+      "source_section": "4.1 Coding Reversal",
+      "page_ref": "4.1.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S059",
+      "type": "body",
+      "source_section": "4.1 Coding Reversal",
+      "page_ref": "4.1.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S060",
+      "type": "body",
+      "source_section": "4.2 Dimension Compression Bias",
+      "page_ref": "4.2.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S061",
+      "type": "body",
+      "source_section": "4.2 Dimension Compression Bias",
+      "page_ref": "4.2.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S062",
+      "type": "body",
+      "source_section": "4.2 Dimension Compression Bias",
+      "page_ref": "4.2.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S063",
+      "type": "body",
+      "source_section": "4.3 Self-Referential Closure",
+      "page_ref": "4.3.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S064",
+      "type": "body",
+      "source_section": "4.3 Self-Referential Closure",
+      "page_ref": "4.3.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S065",
+      "type": "body",
+      "source_section": "4.3 Self-Referential Closure",
+      "page_ref": "4.3.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S066",
+      "type": "body",
+      "source_section": "5.1 Three Questions",
+      "page_ref": "5.1.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S067",
+      "type": "body",
+      "source_section": "5.2 PDCA",
+      "page_ref": "5.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S068",
+      "type": "body",
+      "source_section": "5.3 Chinese Medicine",
+      "page_ref": "5.3",
+      "confidence": 1.0
+    },
+    {
+      "id": "S069",
+      "type": "body",
+      "source_section": "6.1 What This Theory Provides",
+      "page_ref": "6.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S070",
+      "type": "body",
+      "source_section": "6.2 Limitations",
+      "page_ref": "6.2",
+      "confidence": 1.0
+    },
+    {
+      "id": "S071",
+      "type": "body",
+      "source_section": "7. Conclusion",
+      "page_ref": "7.1",
+      "confidence": 1.0
+    },
+    {
+      "id": "S072",
+      "type": "references",
+      "source_section": "References",
+      "page_ref": "Ref",
+      "confidence": 1.0
+    },
+    {
+      "id": "S073",
+      "type": "terminology",
+      "source_section": "Terminology",
+      "page_ref": "Term",
+      "confidence": 1.0
+    }
+  ],
+  "glossary": {
+    "entropy": {
+      "en": "A measure of randomness or uncertainty in a system",
+      "zh": "系统中随机性或不确定性的度量"
+    },
+    "control": {
+      "en": "The process of transporting randomness across dimensions",
+      "zh": "将随机性跨维度传输的过程"
+    },
+    "compression mapping": {
+      "en": "A function f: X → Y where |Y| < |X|",
+      "zh": "一个函数 f: X → Y，其中 |Y| < |X|"
+    },
+    "antifragility": {
+      "en": "The ability to gain from randomness and disorder",
+      "zh": "从随机性和混乱中获益的能力"
+    },
+    "coding": {
+      "en": "The formal expression of control rules",
+      "zh": "控制规则的形式化表达"
+    },
+    "coding-evolution cycle": {
+      "en": "The cycle of entropy decrease → entropy increase → new entropy decrease",
+      "zh": "熵减少→熵增加→新熵减少的循环"
+    }
+  }
+}

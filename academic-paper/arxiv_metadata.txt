@@ -1,0 +1,80 @@
+# arXiv Submission Metadata
+# Generated: 2026-06-03
+# Paper: Compression, Release, and Evolution: A Unified Systems Theory from Entropy
+
+===========================================
+TITLE
+===========================================
+Compression, Release, and Evolution: A Unified Systems Theory from Entropy
+
+===========================================
+AUTHORS
+===========================================
+田陆 (Lu Tian)
+Affiliation: Independent Researcher
+Email: uglyboy@aliyun.com
+
+===========================================
+ABSTRACT
+===========================================
+Systems across physics, biology, and society maintain local order by redistributing entropy to other dimensions. We propose a framework anchored in a redefinition of control: not as a target state, but as an ongoing process that transports randomness (entropy) across dimensions via compression mapping (f: X → Y, |Y| < |X|). From this redefinition, entropy becomes the natural descriptive language rather than an external metaphor. Antifragility emerges as an independent property, irreducible to rigidity or flexibility. Coding transforms system evolution into a unified analytical framework. The theory identifies three structural fallacies shared across eight disciplines—coding reversal, dimension compression bias, and self-referential closure—and argues that evolution is the precondition for stability, not merely a desirable feature. Applying the framework's logic to coding evolution itself reveals that the three-beat coding-evolution cycle is the universal paradigm of evolution, a structural consequence of the theory's own axioms. Formalization and empirical validation remain as next steps.
+
+===========================================
+PRIMARY CATEGORY
+===========================================
+nlin.AO - Adaptation and Self-Organizing Systems
+
+===========================================
+SECONDARY CATEGORIES
+===========================================
+physics.soc-ph - Social and Economic Physics
+cs.AI - Artificial Intelligence
+q-bio.PE - Populations and Evolution
+
+===========================================
+KEYWORDS (建议)
+===========================================
+entropy, compression mapping, antifragility, systems theory, coding evolution, control theory, cross-disciplinary analysis, adaptive systems, resilience, complexity
+
+===========================================
+COMMENTS
+===========================================
+Concept paper / White paper. First published 2026-05-25. 26 references. 7 sections. Released under CC BY-NC-SA 4.0 license.
+
+===========================================
+LICENSE
+===========================================
+CC BY-NC-SA 4.0 - Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+===========================================
+SUBMISSION FORMAT
+===========================================
+PDF (recommended) or LaTeX source
+
+===========================================
+arXiv SUBMISSION CHECKLIST
+===========================================
+[ ] 1. Register arXiv account (requires institutional email verification)
+[ ] 2. Fill in author information and affiliations
+[ ] 3. Upload PDF file (converted from Markdown)
+[ ] 4. Select primary and secondary categories
+[ ] 5. Paste abstract
+[ ] 6. Add keywords and comments
+[ ] 7. Select license (CC BY-NC-SA 4.0)
+[ ] 8. Preview submission
+[ ] 9. Submit and wait for moderation (1-2 days)
+[ ] 10. Receive arXiv ID upon publication
+
+===========================================
+NOTES
+===========================================
+- arXiv requires institutional email for account verification
+- If no institutional affiliation, can use endorsement from existing arXiv author
+- PDF must be generated from LaTeX or converted properly
+- Title should be concise (< 100 characters recommended)
+- Abstract should be 150-250 words (current: ~180 words, OK)
+- Categories determine which readers will see the paper
+
+===========================================
+END OF METADATA
+===========================================
