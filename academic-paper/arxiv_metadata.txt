@@ -10,9 +10,9 @@ Compression, Release, and Evolution: A Unified Systems Theory from Entropy
 ===========================================
 AUTHORS
 ===========================================
-[Author Name] [需要填写]
-Affiliation: [需要填写]
-Email: [需要填写]
+田陆 (Lu Tian)
+Affiliation: Independent Researcher
+Email: uglyboy@aliyun.com
 
 ===========================================
 ABSTRACT
