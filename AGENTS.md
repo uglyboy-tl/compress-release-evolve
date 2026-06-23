@@ -2,7 +2,7 @@
 
 ## 必读
 
-本项目基于「压缩、释放与进化」系统理论。**进行任何诊断或分析之前，必须先阅读白皮书（`academic-paper/white_paper.md`），理解完整的理论框架。** `系统理论.md`、`系统理论完整理解.md` 和 `系统理论对学科范式的挑战.md` 可作为快速参考，但不能替代白皮书。
+本项目基于「压缩、释放与进化」系统理论。**进行任何诊断或分析之前，必须先阅读白皮书（`academic-paper/white_paper.md`），理解完整的理论框架。** `theory/系统理论.md`、`theory/系统理论完整理解.md` 和 `theory/extensions/系统理论对学科范式的挑战.md` 可作为快速参考，但不能替代白皮书。
 
 本项目的核心任务不是"分析热点事件"，而是**将系统理论运用在具体情境中**——产出文章和社交卡片。热点事件只是运用理论的场景之一。
 
@@ -57,6 +57,8 @@
 - **熵排放通道堵塞**：系统的散热带宽被一步步收窄——该释放熵的维度被压缩到无法承接，熵在内部堆积。
 - **外部编码替代内部编码**：用可采购的标准化方案替代了组织在长期碰撞中沉积的默契和能力——表面效率提升，实则破坏进化循环。
 - **弹性项被做成刚性约束**：本应是系统健康运行输出的指标（增长速度、利润率），变成了系统必须遵守的输入约束。
+- **控制耦合**：上层路由和下层内部控制作用在同一个维度上，互相拉扯。比如资本市场季度考核（路由）和管理层经营决策（内部控制）叠加，既管不好也做不长。
+- **路由失效 / 绕行**：母系统（路由功能）失效——该路由的不路由，不该路由的硬要路由。子系统自己找新的熵流出路：部门绕过瘫痪的IT系统自己搭工具，地方绕过失效的金融系统自己搞融资。
 
 更重要的是，**你自己的视角可能会发现本文没列出的模式。** 系统理论提供的是几个底层追问，不是一种分类学。如果你在分析中看到一个不一样的、但切中事件要害的模式——那说明你找到了事件最准确的自然切口。
 
@@ -126,20 +128,27 @@
 
 ```
 compress-release-evolve/
-├── 系统理论.md / README_zh.md / ...    # 核心理论文档
+├── theory/                              # 理论核心
+│   ├── 系统理论.md                      # 科普入门
+│   ├── 系统理论完整理解.md              # 完整概念与推演
+│   └── extensions/                      # 理论延伸
+│       ├── 因果层级与编码进化.md        # 与 Pearl 因果层级的互补
+│       ├── 系统理论对学科范式的挑战.md  # 八个学科的批判分析
+│       └── 母系统与子系统.md            # 嵌套系统的编码关系
+├── academic-paper/                      # 学术论文
+│   ├── white_paper.md                   # 英文白皮书
+│   ├── white_paper.tex
+│   └── reader/                          # 双栏阅读器
 ├── hotspot_analysis/                    # 热点分析
 │   ├── README.md                        # 分析流程和概念框架
 │   ├── TEMPLATE.md                      # 叙事指引
-│   └── YYYY-MM-DD_event/               # 每个热点一个文件夹
-│       ├── article.md                   # 分析文章
-│       └── social-cards/               # 社交卡片
-│           ├── index.html              #   HTML（一个文件含全部海报）
-│           ├── render.mjs              #   渲染脚本
-│           ├── assets/                 #   图片素材
-│           └── output/                 #   渲染输出 PNG
-├── academic-paper/                      # 学术论文
-│   ├── white_paper.md                   # 英文白皮书
-│   └── reader/                          # 双栏阅读器
+│   ├── <文章标题>.md                    # 分析文章（平铺，按标题命名）
+│   └── social-cards/                    # 社交卡片（按事件日期归类）
+│       └── YYYY-MM-DD_event/
+│           ├── index.html
+│           ├── render.mjs
+│           ├── assets/
+│           └── output/
 └── AGENTS.md                            # 本文件
 ```
 
@@ -287,7 +296,7 @@ const browser = await chromium.launch({
 
 ### 社交卡片生成流程
 
-1. 从 `guizang-social-card` skill 复制模板 `assets/template-editorial-card.html` 到 `index.html`
+1. 从 `guizang-social-card` skill 复制模板 `assets/template-editorial-card.html` 到 `social-cards/YYYY-MM-DD_event/index.html`
 2. 选择风格：Editorial Magazine × E-ink（Indigo Porcelain 主题）或 Swiss International
 3. 按 `references/layout-recipes.md` 选择每个页面的布局（M01-M16）
 4. 每张卡一个 `<section class="poster xhs" id="xhs-XX">` — 所有卡写在同一个 HTML 里
