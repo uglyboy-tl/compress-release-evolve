@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="kraft-paper">
+<head>
+  <meta charset="utf-8">
+  <title>情绪经济的秘密 - WeChat Cover</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    @font-face {
+      font-family: 'LXGW WenKai GB Screen';
+      src: url('/home/uglyboy/.local/share/fonts/LXGWWenKaiGBScreen.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'LXGW WenKai Mono';
+      src: url('/home/uglyboy/.local/share/fonts/LXGWWenKaiMono-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+  <style>
+    /* ---------- Theme tokens (kraft-paper) ---------- */
+    :root,
+    [data-theme="kraft-paper"] {
+      --paper:     #eedfc7;
+      --paper-2:   #dfc9a8;
+      --ink:       #2a1e13;
+      --muted:     #755f49;
+      --line:      rgba(42,30,19,.24);
+      --accent:    #9b5a2e;
+      --accent-soft: #d5b58f;
+      --ink-rgb: 42,30,19;
+      --paper-rgb: 238,223,199;
+      --accent-rgb: 155,90,46;
+    }
+
+    /* ---------- Typography stack ---------- */
+    :root {
+      --serif-zh: "LXGW WenKai GB Screen", "Noto Serif SC", "Songti SC", "STSong", serif;
+      --serif-en: "LXGW WenKai GB Screen", "Playfair Display", serif;
+      --sans-zh: "LXGW WenKai GB Screen", -apple-system, "PingFang SC", "Microsoft YaHei UI", sans-serif;
+      --sans-en: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono:    "LXGW WenKai Mono", "IBM Plex Mono", ui-monospace, "SF Mono", Consolas, monospace;
+    }
+
+    /* ---------- Reset ---------- */
+    *,*::before,*::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: #1a1a1a;
+      font-family: var(--sans-zh);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 64px 32px;
+    }
+    .sheet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+    }
+
+    /* ---------- Poster boards ---------- */
+    .poster {
+      position: relative;
+      background: var(--paper);
+      color: var(--ink);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .poster.square { width: 1080px; height: 1080px; }
+    .poster.wide   { width: 2100px; height:  900px; }
+    .poster figure { margin: 0; }
+
+    .poster.square .content { padding: 88px 88px; }
+    .poster.wide   .content { padding: 88px 120px; }
+    .content { position: relative; width: 100%; height: 100%; z-index: 2; }
+
+    /* ---------- Background layers ---------- */
+    .mag-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .grain {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .35;
+      mix-blend-mode: multiply;
+      background-image: radial-gradient(rgba(0,0,0,.045) 1px, transparent 1px);
+      background-size: 3px 3px;
+    }
+    .paper-wash {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(var(--ink-rgb),.02), rgba(var(--ink-rgb),.05) 60%, rgba(var(--ink-rgb),.08));
+    }
+
+    /* ---------- Typography ---------- */
+    .kicker {
+      font-family: var(--mono);
+      font-size: 21px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+      margin: 0 0 18px;
+    }
+    .h-display {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 128px;
+      line-height: 1.06;
+      letter-spacing: .04em;
+      margin: 0 0 24px;
+      color: var(--ink);
+    }
+    .h-xl {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 96px;
+      line-height: 1.10;
+      letter-spacing: .03em;
+      margin: 0 0 24px;
+      color: var(--ink);
+    }
+    .h-md {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 1.18;
+      letter-spacing: .02em;
+      margin: 0 0 18px;
+      color: var(--ink);
+    }
+    .h-sub {
+      font-family: var(--serif-en);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 36px;
+      color: var(--muted);
+      margin: 0 0 24px;
+    }
+    .lead {
+      font-family: var(--serif-zh);
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 1.55;
+      color: rgba(var(--ink-rgb), .82);
+      margin: 0 0 24px;
+    }
+    .meta {
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+    }
+    .label {
+      font-family: var(--mono);
+      font-size: 18px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+      color: rgba(var(--ink-rgb), .55);
+    }
+
+    /* Square boards tighter scales */
+    .poster.square .h-xl  { font-size: 78px; }
+    .poster.square .h-md  { font-size: 48px; }
+    .poster.square .lead  { font-size: 28px; }
+
+    /* ---------- Issue label + strip ---------- */
+    .issue-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .issue-row .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .issue-strip {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 14px 28px;
+      font-family: var(--mono);
+      font-size: 17px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.85);
+      background: linear-gradient(to top, rgba(42,30,19,.7) 0%, rgba(42,30,19,.35) 60%, transparent 100%);
+    }
+    .issue-strip span { white-space: nowrap; }
+
+    /* ---------- Layout primitives ---------- */
+    .stack    { display: flex; flex-direction: column; }
+    .gap-1    { gap: 12px; }
+    .gap-2    { gap: 24px; }
+    .gap-3    { gap: 36px; }
+    .gap-4    { gap: 48px; }
+    .row      { display: flex; flex-direction: row; }
+    .grow     { flex: 1; }
+
+    /* ---------- Image containers ---------- */
+    .frame-img {
+      position: relative;
+      overflow: hidden;
+      background: var(--paper-2);
+      display: block;
+      margin: 0;
+    }
+    .frame-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 50%;
+      display: block;
+    }
+
+    /* ---------- 21:9 cover specific ----------
+       Layout: grid with 2 cols, issue-strip spans full width ---------- */
+    .cover-wide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      height: 100%;
+    }
+    .cover-wide .text-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 48px;
+    }
+    .cover-wide .img-side {
+      position: relative;
+      overflow: hidden;
+    }
+    .cover-wide .img-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+    }
+
+    /* ---------- 1:1 cover: full-bleed image + bottom overlay ---------- */
+    .cover-img-full {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      z-index: 1;
+    }
+    .cover-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      pointer-events: none;
+    }
+    .cover-overlay .overlay-bar {
+      padding: 48px 72px 56px;
+      background: linear-gradient(to top, rgba(42,30,19,.88) 0%, rgba(42,30,19,.5) 60%, transparent 100%);
+    }
+    .cover-overlay .short-title {
+      font-family: var(--serif-zh);
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 1.2;
+      letter-spacing: .06em;
+      color: #fff;
+      margin: 0 0 20px;
+      text-shadow: 0 2px 12px rgba(0,0,0,.3);
+    }
+    .cover-overlay .short-meta {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.7);
+    }
+
+    /* ---------- Pair preview ---------- */
+    .pair-preview {
+      width: 2400px;
+      min-height: 1180px;
+      background: var(--paper-2);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 2100px 1080px;
+      grid-template-rows: 900px 1080px;
+      gap: 48px;
+      align-content: center;
+      justify-content: center;
+    }
+    .pair-preview .preview-wide   { grid-column: 1; grid-row: 1 / span 2; align-self: center; }
+    .pair-preview .preview-square { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+    .pair-preview .preview-label {
+      font-family: var(--mono);
+      font-size: 20px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+
+    <!-- ===== 21:9 WECHAT MAIN COVER ===== -->
+    <section class="poster wide" id="wechat-21x9">
+      <canvas class="mag-bg" data-bg="ink-flow"></canvas>
+      <div class="grain"></div>
+      <div class="content">
+        <div class="cover-wide">
+          <!-- Left: text -->
+          <div class="text-side">
+            <div class="issue-row">
+              <span>Essay</span><span class="dot"></span><span>System Theory</span>
+            </div>
+            <div class="stack gap-2" style="margin-top:36px;">
+              <h1 class="h-display" style="font-size:108px;line-height:1.12;">情绪经济的秘密<br>藏在拉布布的共情编码里</h1>
+              <p class="lead" style="font-size:30px;">一只九颗牙的精灵站上世界杯开幕式——它不是玩具，是一套共情编码。</p>
+            </div>
+          </div>
+          <!-- Right: image -->
+          <!-- Subject map: Labubu figure in World Cup jersey, centered in frame, face at ~35% from top -->
+          <div class="img-side">
+            <img src="assets/labubu-worldcup-store.jpeg" alt="Labubu wearing World Cup jersey at Pop Mart store"
+                 style="object-position:center 40%;">
+            <div class="issue-strip">
+              <span>Pop Mart · The Monsters</span>
+              <span>-</span>
+              <span>Photo · CGTN / VCG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 1:1 WECHAT SQUARE COVER ===== -->
+    <section class="poster square" id="wechat-1x1">
+      <img class="cover-img-full" src="assets/labubu-worldcup-store.jpeg" alt="Labubu wearing World Cup jersey"
+           style="object-position:center 35%;z-index:1;">
+      <div class="cover-overlay">
+        <div class="overlay-bar">
+          <h1 class="short-title">拉布布的共情编码</h1>
+          <p class="short-meta">Labubu · 共情编码</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PAIR PREVIEW ===== -->
+    <section class="pair-preview">
+      <div class="preview-wide">
+        <p class="preview-label">21:9 Main Cover</p>
+        <div style="width:2100px;height:900px;overflow:hidden;border-radius:4px;">
+          <div id="preview-wide-inner" style="width:2100px;height:900px;transform-origin:top left;"></div>
+        </div>
+      </div>
+      <div class="preview-square">
+        <p class="preview-label">1:1 Square Cover</p>
+        <div style="width:1080px;height:1080px;overflow:hidden;border-radius:4px;">
+          <div id="preview-square-inner" style="width:1080px;height:1080px;transform-origin:top left;"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WebGL background -->
+  <script src="assets/magazine-bg-webgl.js"></script>
+  <script>
+    (function () {
+      function cssVarRgb(name, fallback) {
+        var raw = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+        if (!raw) return fallback;
+        var parts = raw.split(',').map(function (x) { return parseInt(x.trim(), 10); });
+        return parts.length === 3 && parts.every(function (n) { return !isNaN(n); }) ? parts : fallback;
+      }
+      function mountAll() {
+        if (!window.MagazineBg || !window.MagazineBg.mount) return;
+        var ink    = cssVarRgb('--ink-rgb',    [42, 30, 19]);
+        var paper  = cssVarRgb('--paper-rgb',  [238, 223, 199]);
+        var accent = cssVarRgb('--accent-rgb', [155, 90, 46]);
+        document.querySelectorAll('canvas.mag-bg').forEach(function (c) {
+          window.MagazineBg.mount(c, {
+            ink: ink,
+            paper: paper,
+            accent: accent,
+            strength: 0.32,
+            frozenTime: 12.5
+          });
+        });
+      }
+      if (document.readyState === 'complete') mountAll();
+      else window.addEventListener('load', mountAll);
+    })();
+  </script>
+</body>
+</html>
