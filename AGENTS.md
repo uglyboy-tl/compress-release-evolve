@@ -120,7 +120,7 @@
 1. **素材收集**：用 anysearch 搜索相关新闻、采访、评论，获取一手信息
 2. **诊断**：按诊断（三问：什么被压缩了、熵去了哪里、进化卡在哪）→ 治疗（编码进化循环）的两阶段走。不用预设答案，顺着事件本身的逻辑走
 3. **叙事写作**：叙事优先。先讲好故事，再用概念加深。不要写成分析报告
-4. **社交卡片**：用 guizang-social-card skill 生成小红书图文 / 公众号封面
+4. **社交卡片**：生成小红书图文 / 公众号封面
 
 ---
 
@@ -131,10 +131,15 @@ compress-release-evolve/
 ├── theory/                              # 理论核心
 │   ├── 系统理论.md                      # 科普入门
 │   ├── 系统理论完整理解.md              # 完整概念与推演
+│   ├── case-studies/                    # 案例研究
 │   └── extensions/                      # 理论延伸
 │       ├── 因果层级与编码进化.md        # 与 Pearl 因果层级的互补
 │       ├── 系统理论对学科范式的挑战.md  # 八个学科的批判分析
-│       └── 母系统与子系统.md            # 嵌套系统的编码关系
+│       ├── 子系统与控制模块.md          # 控制层级结构
+│       ├── 从惊奇开始：系统理论对哲学九问的回答.md
+│       ├── 共情：编码、熵摄入与信息交换.md
+│       ├── 游戏化：寻熵的容器.md
+│       └── 组织：系统理论推演.md
 ├── academic-paper/                      # 学术论文
 │   ├── white_paper.md                   # 英文白皮书
 │   ├── white_paper.tex
@@ -146,7 +151,7 @@ compress-release-evolve/
 │   └── social-cards/                    # 社交卡片（按事件日期归类）
 │       └── YYYY-MM-DD_event/
 │           ├── index.html
-│           ├── render.mjs
+│           ├── render.py
 │           ├── assets/
 │           └── output/
 └── AGENTS.md                            # 本文件
@@ -252,146 +257,4 @@ compress-release-evolve/
 4. **保留原作者的独特表达。** 如果原文有好的类比、独特的叙事节奏，不要为了统一风格而抹掉。目标是**让好内容更容易被读懂**，不是把所有人的文章变成同一个模子。
 
 ---
-
-## 工具使用技巧
-
-### 社交卡片生成流程
-
-#### 0. 图片来源（用户无图时）
-
-技能模板要求三选一：
-
-- **A（推荐）**：用户自己提供照片/截图
-- **B（新闻/网络搜索）**：用 websearch 搜索相关新闻图片，从新闻网站直接下载。例如搜索 `Labubu 世界杯 开幕式 CGTN` 可找到高质量新闻摄影。按 skill 流程记录 SOURCES.md 并询问用户是否需要标注来源。
-- **C（AI 生成）**：用 image-gen skill 生成
-
-**实操经验**：B 路径优先搜索新闻图片（时效性强、质量高、有真实感），其次 Flickr CC 池。避免用 AI 生成有明确外观的 IP 形象（如 Labubu），AI 不能准确还原其锯齿牙、尖耳朵等特征。
-
-#### 1. 准备任务目录
-
-```
-social-cards/YYYY-MM-DD_event/
-├── index.html            # 全部 card 的 HTML + CSS（从模板复制后修改）
-├── render.py             # uv + playwright 渲染脚本
-├── assets/
-│   ├── magazine-bg-webgl.js  # 从 skill 复制
-│   └── hero-xxx.jpg          # 主图
-└── output/
-    └── wechat-*.png          # 渲染输出
-```
-
-从 `guizang-social-card` skill（`.agents/skills/guizang-social-card-skill/`）复制 `assets/template-editorial-card.html` 到 `index.html`，复制 `assets/magazine-bg-webgl.js` 到 `assets/`。
-
-#### 2. 编写 HTML
-
-- 设置 `<html data-theme="kraft-paper">`（或其他主题）
-- 字体用本机 **LXGW WenKai GB Screen**，替换 Google Fonts：
-  ```html
-  <style>
-  @font-face {
-    font-family: 'LXGW WenKai GB Screen';
-    src: url('/home/uglyboy/.local/share/fonts/LXGWWenKaiGBScreen.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'LXGW WenKai Mono';
-    src: url('/home/uglyboy/.local/share/fonts/LXGWWenKaiMono-Medium.ttf') format('truetype');
-  }
-  </style>
-  ```
-  字体变量：
-  ```css
-  --serif-zh: "LXGW WenKai GB Screen", serif;
-  --mono:    "LXGW WenKai Mono", monospace;
-  ```
-
-- 每个 `<section class="poster">` 一个封面，用 `id` 区分
-
-**微信 21:9 封面布局要点**：
-- `grid-template-columns: 1fr 1fr` 左文字右图片
-- 底部信息条（.issue-strip）必须放在 `.img-side` 内部（absolute bottom:0），不能全宽，否则与图片列不对齐
-- 信息条加 `background: linear-gradient` 半透明底，文字用白色
-
-**微信 1:1 封面布局要点**：
-- 图片必须全出血（absolute inset:0），不能放在有 padding 的 `.content` 内
-- 文字用底层 .overlay-bar 加渐变背景 + 白色字
-- 不保留 `.content` 的 paper 背景色，否则会出现白边
-
-#### 3. 渲染脚本（uv + playwright，Python）
-
-本机 `playwright-core` 未预装，改用 `uv` 自动管理依赖：
-
-```python
-# /// script
-# requires-python = ">=3.10"
-# dependencies = ["playwright"]
-# ///
-
-import asyncio
-from pathlib import Path
-from playwright.async_api import async_playwright
-
-TASK = Path(__file__).parent
-HTML = TASK / "index.html"
-OUT = TASK / "output"
-OUT.mkdir(exist_ok=True)
-
-TARGETS = [
-    ("#wechat-21x9", "wechat-21x9.png", 2100, 900),
-    ("#wechat-1x1", "wechat-1x1.png", 1080, 1080),
-]
-
-async def main():
-    async with async_playwright() as pw:
-        browser = await pw.chromium.launch(
-            executable_path="/opt/microsoft/msedge/msedge",
-            headless=True,
-            args=["--no-sandbox", "--disable-gpu"],
-        )
-        page = await browser.new_page()
-        await page.set_viewport_size({"width": 2400, "height": 15000})
-        await page.goto(f"file://{HTML.resolve()}", wait_until="domcontentloaded", timeout=60000)
-        await page.wait_for_timeout(5000)  # 等 WebGL canvas + 字体渲染
-
-        for selector, name, w, h in TARGETS:
-            el = page.locator(selector)
-            await el.screenshot(path=str(OUT / name), type="png")
-            print(f"✓ {name}")
-        await browser.close()
-
-asyncio.run(main())
-```
-
-运行：`uv run render.py`
-
-**关键坑位**：
-- 不能用 `waitUntil: 'networkidle'`（引用了网络字体/资源时会永远挂起）
-- msedge 路径 `/opt/microsoft/msedge/msedge`
-- WebGL canvas 需 `waitForTimeout(5000)` 等渲染完成
-- viewport 高度要大于所有 poster 的总高度
-- 用 `element.screenshot()` 而非 `page.screenshot(clip)` 自动处理裁剪
-
-#### 4. 拼合微信封面组
-
-公众号需上传一张图，截出 21:9 和 1:1 两个区域。用 Pillow 拼合：
-
-```python
-from PIL import Image
-wide = Image.open('output/wechat-21x9.png')    # 2100x900
-sq   = Image.open('output/wechat-1x1.png')     # 1080x1080
-sq_resized = sq.resize((900, 900), Image.LANCZOS)
-combined = Image.new('RGB', (2100 + 900, 900))
-combined.paste(wide, (0, 0))
-combined.paste(sq_resized, (2100, 0))
-combined.save('output/wechat-combined.png')
-```
-
-输出 `wechat-combined.png`（3000×900），左半截取 21:9 封面，右半截取 1:1 方图。
-
-#### 5. 多轮修正
-
-渲染后，用 multimodal-looker agent 检查图片，常见问题：
-- **角标残留**：`.corner-tl` 等调试元素需移除
-- **横线对齐**：21:9 底部信息条只应在图片列下方，不能全宽
-- **白边**：1:1 图片必须全出血，检查是否有 paper 背景色透过
-- **孤字**：副标题不要单字成行，调整措辞或字体大小
 

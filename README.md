@@ -54,7 +54,7 @@ The theory identifies three structural errors shared across economics, natural s
 | [系统理论完整理解.md](theory/系统理论完整理解.md) | Complete concept definitions, logical derivation, and case studies | 2 |
 | [因果层级与编码进化.md](theory/extensions/因果层级与编码进化.md) | Complementary framework to Judea Pearl's causal hierarchy | 3 |
 | [系统理论对学科范式的挑战.md](theory/extensions/系统理论对学科范式的挑战.md) | Critical analysis of 8 disciplines: economics, natural science, political science, law, medicine, education, AI, and management | 4 |
-| [母系统与子系统.md](theory/extensions/母系统与子系统.md) | Extension: parent-child subsystem dynamics and coding lock-in across nested systems | 5 |
+| [子系统与控制模块.md](theory/extensions/子系统与控制模块.md) | Extension: control hierarchy and coding lock-in across nested systems | 5 |
 
 ## Methodology
 
