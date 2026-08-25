@@ -1,5 +1,5 @@
 ---
-date: 2026-08-25 12:06:43
+date: 2026-05-25 12:06:43
 lastmod: 2026-08-25 12:49:36
 ---
 # Compress, Release, and Evolve: A Unified Systems Theory
