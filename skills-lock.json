@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "dbs-xhs-title": {
+      "source": "dontbesilent2025/dbskill",
+      "sourceType": "github",
+      "skillPath": "skills/dbs-xhs-title/SKILL.md",
+      "computedHash": "12880fcbad0e29d712ec1ab79be02b23159cebe579cda3cdb2aef5bff8289c41"
+    },
     "weread-skills": {
       "source": "Tencent/WeChatReading",
       "sourceType": "github",
