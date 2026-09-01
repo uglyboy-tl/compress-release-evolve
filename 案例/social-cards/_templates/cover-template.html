@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公众号封面 · 模板</title>
+  <!--
+    【公众号封面模板】
+    - 微信新版主图封面比例 3.35:1，900px 宽时高约 268px
+    - 全部尺寸用容器查询 cqw 单位，宽度自适应，改 max-width 即可整体缩放
+    - 渲染脚本 render-cover.py 会按此容器尺寸截图
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap">
+  <!-- 本地楷体（霞鹜文楷），项目已在 labubu 卡片使用；若无需可删 -->
+  <style>
+    @font-face {
+      font-family: 'LXGW WenKai GB Screen';
+      src: url('/home/uglyboy/.local/share/fonts/LXGWWenKaiGBScreen.ttf') format('truetype');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+  </style>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #1a1a1a;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 封面容器：3.35:1，宽度自适应 */
+    .cover {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 3.35 / 1;
+      overflow: hidden;
+      container-type: inline-size;
+      border-radius: 0;
+      /* 底层蓝白渐变，配合山水染蓝后作为整体底色 */
+      background: linear-gradient(135deg, rgb(224,242,254) 0%, rgb(240,249,255) 50%, rgb(255,255,255) 100%);
+    }
+
+    /* 背景山水层 */
+    .cover .bg-img {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/bg.jpg');  /* ← 替换为你的背景图 */
+      background-size: cover;
+      background-position: center center;
+      opacity: 0.45;                          /* 背景浓度 */
+    }
+    /* 纯色淡蓝染：把灰黑山水染成蓝调，去掉“雾霾灰” */
+    .cover .bg-blend-multiply {
+      position: absolute;
+      inset: 0;
+      background: rgba(147,197,253,0.24);
+      mix-blend-mode: multiply;
+    }
+    .cover .bg-blend-screen {
+      position: absolute;
+      inset: 0;
+      background: rgba(219,234,254,0.18);
+      mix-blend-mode: screen;
+    }
+
+    /* 内容层 */
+    .cover .content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      height: 100%;
+    }
+
+    /* 左：标题卡片 */
+    .cover .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .cover .card {
+      padding: 3% 4%;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 2cqw;
+    }
+    .cover .title {
+      font-family: "LXGW WenKai GB Screen", serif;
+      font-weight: bold;
+      font-size: 4.2cqw;                    /* 如用 Noto Serif SC 可换 */
+      line-height: 1.3;
+      color: rgb(12,74,110);
+    }
+    .cover .title span { display: block; }
+    .cover .sub {
+      font-family: "LXGW WenKai GB Screen", serif;
+      font-size: 1.7cqw;
+      line-height: 1.5;
+      opacity: 0.8;
+      color: rgb(12,74,110);
+      margin-top: 0.4em;
+    }
+
+    /* 右：强调文案（竖线分隔） */
+    .cover .right {
+      width: 29.85%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid rgba(255,255,255,0.25);
+    }
+    .cover .side {
+      text-align: center;
+      padding: 0 8%;
+      font-family: "LXGW WenKai GB Screen", serif;
+      font-weight: bold;
+      font-size: 3.6cqw;
+      line-height: 1.3;
+      color: rgb(12,74,110);
+    }
+    .cover .side span { display: block; }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="bg-img"></div>
+    <div class="bg-blend-multiply"></div>
+    <div class="bg-blend-screen"></div>
+
+    <div class="content">
+      <div class="left">
+        <div class="card">
+          <h1 class="title">
+            <!-- 主标题，两行用换行，或直接改文字 -->
+            <span>麻药不睡、血压不降</span>
+            <span>你手里的药，到底怎么了？</span>
+          </h1>
+          <p class="sub">
+            2024 年底，佛山一位麻醉科医生把药量加到上限，病人还醒着……
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="side">
+          <!-- 右侧强调文案 -->
+          <span>3 分钱的药</span>
+          <span>你敢吃吗？</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
