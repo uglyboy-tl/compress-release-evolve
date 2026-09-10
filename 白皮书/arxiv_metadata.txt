@@ -1,5 +1,5 @@
 # arXiv Submission Metadata
-# Generated: 2026-06-03
+# Generated: 2026-06-03 (revised 2026-09-01)
 # Paper: Compression, Release, and Evolution: A Unified Systems Theory from Entropy
 
 ===========================================
@@ -17,7 +17,7 @@ Email: uglyboy@aliyun.com
 ===========================================
 ABSTRACT
 ===========================================
-Systems across physics, biology, and society maintain local order by redistributing entropy to other dimensions. We propose a framework anchored in a redefinition of control: not as a target state, but as an ongoing process that transports randomness (entropy) across dimensions via compression mapping (f: X → Y, |Y| < |X|). From this redefinition, entropy becomes the natural descriptive language rather than an external metaphor. Antifragility emerges as an independent property, irreducible to rigidity or flexibility. Coding transforms system evolution into a unified analytical framework. The theory identifies three structural fallacies shared across eight disciplines—coding reversal, dimension compression bias, and self-referential closure—and argues that evolution is the precondition for stability, not merely a desirable feature. Applying the framework's logic to coding evolution itself reveals that the three-beat coding-evolution cycle is the universal paradigm of evolution, a structural consequence of the theory's own axioms. Formalization and empirical validation remain as next steps.
+Systems across physics, biology, and society maintain local order by redistributing entropy to other dimensions. We propose a framework anchored in a redefinition of control: not as a target state, but as an ongoing process that transports randomness (entropy) across dimensions via compression mapping (f: X → Y, |Y| < |X|). From this redefinition, entropy becomes the natural descriptive language rather than an external metaphor. Antifragility emerges as an independent property, irreducible to rigidity or flexibility. Coding transforms system evolution into a unified analytical framework, and a causal-hierarchy microfoundation explains why the resulting coding-evolution cycle cannot stop: once codes exist, intervention is entropy decrease, counterfactual combination is entropy increase, and the combinatorial space of codes grows factorially beyond any controller's reach. The theory identifies three structural fallacies shared across eight disciplines—coding reversal, dimension compression bias, and self-referential closure—and reinterprets the first two as characteristic stallings of the coding-evolution cycle while the third disables the system's capacity to repair them. A further distinction between material entropy and information entropy locates the limit of incentive-based coordination: dominance rests not on control density but on entropy supply. Applying the framework's logic to coding evolution itself reveals that the three-beat coding-evolution cycle is the universal paradigm of evolution, a structural consequence of the theory's own axioms. Formalization and empirical validation remain as next steps.
 
 ===========================================
 PRIMARY CATEGORY
@@ -34,12 +34,12 @@ q-bio.PE - Populations and Evolution
 ===========================================
 KEYWORDS (建议)
 ===========================================
-entropy, compression mapping, antifragility, systems theory, coding evolution, control theory, cross-disciplinary analysis, adaptive systems, resilience, complexity
+entropy, compression mapping, antifragility, systems theory, coding evolution, control theory, causal hierarchy, dissipative structures, information entropy, cross-disciplinary analysis, adaptive systems, resilience, complexity
 
 ===========================================
 COMMENTS
 ===========================================
-Concept paper / White paper. First published 2026-05-25. 26 references. 7 sections. Released under CC BY-NC-SA 4.0 license.
+Concept paper / White paper. First published 2026-05-25, revised 2026-09-01. 30 references. 7 sections. Released under CC BY-NC-SA 4.0 license.
 
 ===========================================
 LICENSE
@@ -72,7 +72,7 @@ NOTES
 - If no institutional affiliation, can use endorsement from existing arXiv author
 - PDF must be generated from LaTeX or converted properly
 - Title should be concise (< 100 characters recommended)
-- Abstract should be 150-250 words (current: ~180 words, OK)
+- Abstract should be 150-250 words (current: ~225 words, OK)
 - Categories determine which readers will see the paper
 
 ===========================================
